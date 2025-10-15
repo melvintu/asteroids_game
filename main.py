@@ -5,10 +5,12 @@ from player import *
 from asteroid import *
 from asteroidfield import AsteroidField
 from shot import *
-
+from text import *
 
 def main():
     pygame.init()
+    pygame.font.init() # initialises font
+
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     clock = pygame.time.Clock()
 
